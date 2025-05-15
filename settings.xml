@@ -1,0 +1,31 @@
+<settings>
+<servers>
+  <server>
+    <id>firstwebapp-firstwebapp-devops-cicd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>firstwebapp-firstwebapp-devops-cicd</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>firstwebapp-firstwebapp-devops-cicd</id>
+        <url>https://firstwebapp-181483249332.d.codeartifact.eu-north-1.amazonaws.com/maven/firstwebapp-devops-cicd/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>firstwebapp-firstwebapp-devops-cicd</id>
+    <name>firstwebapp-firstwebapp-devops-cicd</name>
+    <url>https://firstwebapp-181483249332.d.codeartifact.eu-north-1.amazonaws.com/maven/firstwebapp-devops-cicd/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
