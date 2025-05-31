@@ -20,4 +20,6 @@ phases:
 artifacts:
   files:
     - target/firstwebapp-web-project.war
+    - appspec.yml
+    - scripts/**/*
   discard-paths: no
